@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elitegram - Premium Social Experience</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="animated-bg">
+        <div class="gradient-orb orb-1"></div>
+        <div class="gradient-orb orb-2"></div>
+        <div class="gradient-orb orb-3"></div>
+    </div>
+
+   <!-- Navigation Bar -->
+<nav class="navbar glass-effect">
+    <div class="navbar-container">
+
+        <!-- ELITEGRAM PREMIUM LOGO -->
+        <div class="navbar-logo">
+            
+            <!-- Instagram Style Gradient Logo -->
+            <div class="elitegram-logo">
+                <div class="logo-ring"></div>
+                <div class="logo-dot"></div>
+            </div>
+
+            <span class="logo-text">Elitegram</span>
+        </div>
+            <div class="navbar-search glass-effect">
+                <input type="text" placeholder="Discover elite content..." class="search-input">
+                <i class="fas fa-search"></i>
+            </div>
+            <div class="navbar-icons">
+                <button class="nav-icon pulse-icon" id="home-btn" title="Home">
+                    <i class="fas fa-home"></i>
+                </button>
+                <button class="nav-icon" id="explore-btn" title="Explore">
+                    <i class="fas fa-compass"></i>
+                </button>
+                <button class="nav-icon" id="reels-btn" title="Reels">
+                    <i class="fas fa-film"></i>
+                </button>
+                <button class="nav-icon" id="create-btn" title="Create">
+                    <i class="fas fa-plus-square"></i>
+                </button>
+                <button class="nav-icon notification-icon" id="likes-btn" title="Likes">
+                    <i class="fas fa-heart"></i>
+                    <span class="notification-badge animated-badge">7</span>
+                </button>
+                <button class="nav-icon" id="messages-btn" title="Messages">
+                    <i class="fas fa-paper-plane"></i>
+                    <span class="notification-badge">3</span>
+                </button>
+                <button class="nav-icon" id="theme-toggle" title="Dark Mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="nav-icon profile-icon" id="profile-btn" title="Profile">
+                    <img src="profile photo.jpeg" alt="Profile" class="profile-avatar">
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Container -->
+    <div class="main-container">
+        <!-- Sidebar -->
+        <aside class="sidebar glass-effect">
+            <div class="sidebar-content">
+                <div class="sidebar-logo">
+                    <i class="fas fa-crown"></i>
+                </div>
+                <ul class="sidebar-menu">
+                    <li><a href="#" class="menu-item active" data-tooltip="Home"><i class="fas fa-home"></i><span>Home</span></a></li>
+                    <li><a href="#" class="menu-item" data-tooltip="Explore"><i class="fas fa-compass"></i><span>Explore</span></a></li>
+                    <li><a href="#" class="menu-item" data-tooltip="Reels"><i class="fas fa-film"></i><span>Reels</span></a></li>
+                    <li><a href="#" class="menu-item" data-tooltip="Messages"><i class="fas fa-paper-plane"></i><span>Messages</span></a></li>
+                    <li><a href="#" class="menu-item" data-tooltip="Saved"><i class="fas fa-bookmark"></i><span>Saved</span></a></li>
+                    <li><a href="#" class="menu-item" id="profile-menu" data-tooltip="Profile"><i class="fas fa-user"></i><span>Profile</span></a></li>
+                    <li><a href="#" class="menu-item" data-tooltip="Settings"><i class="fas fa-cog"></i><span>Settings</span></a></li>
+                </ul>
+                <button class="logout-btn premium-btn">
+                    <i class="fas fa-sign-out-alt"></i>
+                    <span>Logout</span>
+                </button>
+            </div>
+        </aside>
+
+        <!-- Feed Section -->
+        <main class="feed">
+            <!-- Stories Section -->
+            <section class="stories-section glass-effect">
+                <div class="stories-container">
+                    <div class="story add-story premium-story" id="add-story-btn">
+                        <div class="story-avatar premium-avatar">
+                            <i class="fas fa-plus"></i>
+                        </div>
+                        <p>Your Story</p>
+                    </div>
+                    <div class="story premium-story" data-story-id="1">
+                        <div class="story-avatar premium-avatar">
+                            <img src="https://i.pravatar.cc/56?img=2" alt="User">
+                            <span class="story-indicator"></span>
+                        </div>
+                        <p>john_elite</p>
+                    </div>
+                    <div class="story premium-story" data-story-id="2">
+                        <div class="story-avatar premium-avatar">
+                            <img src="https://i.pravatar.cc/56?img=3" alt="User">
+                            <span class="story-indicator"></span>
+                        </div>
+                        <p>jane_premium</p>
+                    </div>
+                    <div class="story premium-story" data-story-id="3">
+                        <div class="story-avatar premium-avatar">
+                            <img src="https://i.pravatar.cc/56?img=4" alt="User">
+                            <span class="story-indicator"></span>
+                        </div>
+                        <p>alex_elite</p>
+                    </div>
+                    <div class="story premium-story" data-story-id="4">
+                        <div class="story-avatar premium-avatar">
+                            <img src="https://i.pravatar.cc/56?img=5" alt="User">
+                            <span class="story-indicator"></span>
+                        </div>
+                        <p>sarah_elite</p>
+                    </div>
+                    <div class="story premium-story" data-story-id="5">
+                        <div class="story-avatar premium-avatar">
+                            <img src="https://i.pravatar.cc/56?img=6" alt="User">
+                            <span class="story-indicator"></span>
+                        </div>
+                        <p>mike_elite</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Posts Section -->
+            <section class="posts-section">
+                <!-- Post 1 -->
+                <article class="post glass-effect premium-post" data-post-id="1">
+                    <div class="post-header">
+                        <div class="post-user">
+                            <img src="https://i.pravatar.cc/40?img=2" alt="User" class="post-avatar">
+                            <div class="post-user-info">
+                                <h3>john_elite</h3>
+                                <span class="post-time">2 hours ago</span>
+                            </div>
+                            <span class="elite-badge"><i class="fas fa-star"></i> Elite</span>
+                        </div>
+                        <button class="post-menu-btn">
+                            <i class="fas fa-ellipsis-h"></i>
+                        </button>
+                    </div>
+                    <div class="post-image premium-image">
+                        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=500&h=500&fit=crop" alt="Post">
+                        <div class="image-overlay"></div>
+                    </div>
+                    <div class="post-actions">
+                        <button class="action-btn like-btn" data-post="1">
+                            <i class="far fa-heart"></i>
+                        </button>
+                        <button class="action-btn comment-btn">
+                            <i class="far fa-comment"></i>
+                        </button>
+                        <button class="action-btn share-btn">
+                            <i class="far fa-paper-plane"></i>
+                        </button>
+                        <button class="action-btn save-btn">
+                            <i class="far fa-bookmark"></i>
+                        </button>
+                    </div>
+                    <div class="post-likes">
+                        <strong id="likes-count-1">1,234</strong> likes
+                    </div>
+                    <div class="post-caption">
+                        <strong>john_elite</strong> Capturing moments of pure elegance 🏔️✨ #EliteLife #Luxury
+                    </div>
+                    <div class="post-comments">
+                        <a href="#">View all 45 comments</a>
+                    </div>
+                </article>
+
+                <!-- Post 2 -->
+                <article class="post glass-effect premium-post" data-post-id="2">
+                    <div class="post-header">
+                        <div class="post-user">
+                            <img src="https://i.pravatar.cc/40?img=3" alt="User" class="post-avatar">
+                            <div class="post-user-info">
+                                <h3>jane_premium</h3>
+                                <span class="post-time">4 hours ago</span>
+                            </div>
+                            <span class="elite-badge"><i class="fas fa-star"></i> Elite</span>
+                        </div>
+                        <button class="post-menu-btn">
+                            <i class="fas fa-ellipsis-h"></i>
+                        </button>
+                    </div>
+                    <div class="post-image premium-image">
+                        <img src="https://images.unsplash.com/photo-1495521821757-a1efb6729352?w=500&h=500&fit=crop" alt="Post">
+                        <div class="image-overlay"></div>
+                    </div>
+                    <div class="post-actions">
+                        <button class="action-btn like-btn" data-post="2">
+                            <i class="far fa-heart"></i>
+                        </button>
+                        <button class="action-btn comment-btn">
+                            <i class="far fa-comment"></i>
+                        </button>
+                        <button class="action-btn share-btn">
+                            <i class="far fa-paper-plane"></i>
+                        </button>
+                        <button class="action-btn save-btn">
+                            <i class="far fa-bookmark"></i>
+                        </button>
+                    </div>
+                    <div class="post-likes">
+                        <strong id="likes-count-2">2,567</strong> likes
+                    </div>
+                    <div class="post-caption">
+                        <strong>jane_premium</strong> Living the premium lifestyle ☕💎 #EliteStyle #Luxury
+                    </div>
+                    <div class="post-comments">
+                        <a href="#">View all 89 comments</a>
+                    </div>
+                </article>
+
+                <!-- Post 3 -->
+                <article class="post glass-effect premium-post" data-post-id="3">
+                    <div class="post-header">
+                        <div class="post-user">
+                            <img src="https://i.pravatar.cc/40?img=4" alt="User" class="post-avatar">
+                            <div class="post-user-info">
+                                <h3>alex_elite</h3>
+                                <span class="post-time">6 hours ago</span>
+                            </div>
+                            <span class="elite-badge"><i class="fas fa-star"></i> Elite</span>
+                        </div>
+                        <button class="post-menu-btn">
+                            <i class="fas fa-ellipsis-h"></i>
+                        </button>
+                    </div>
+                    <div class="post-image premium-image">
+                        <img src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=500&h=500&fit=crop" alt="Post">
+                        <div class="image-overlay"></div>
+                    </div>
+                    <div class="post-actions">
+                        <button class="action-btn like-btn" data-post="3">
+                            <i class="far fa-heart"></i>
+                        </button>
+                        <button class="action-btn comment-btn">
+                            <i class="far fa-comment"></i>
+                        </button>
+                        <button class="action-btn share-btn">
+                            <i class="far fa-paper-plane"></i>
+                        </button>
+                        <button class="action-btn save-btn">
+                            <i class="far fa-bookmark"></i>
+                        </button>
+                    </div>
+                    <div class="post-likes">
+                        <strong id="likes-count-3">3,891</strong> likes
+                    </div>
+                    <div class="post-caption">
+                        <strong>alex_elite</strong> Paradise awaits the elite travelers 🌅🏝️ #EliteTravel #Luxury
+                    </div>
+                    <div class="post-comments">
+                        <a href="#">View all 156 comments</a>
+                    </div>
+                </article>
+
+                <!-- Post 4 -->
+                <article class="post glass-effect premium-post" data-post-id="4">
+                    <div class="post-header">
+                        <div class="post-user">
+                            <img src="https://i.pravatar.cc/40?img=5" alt="User" class="post-avatar">
+                            <div class="post-user-info">
+                                <h3>sarah_elite</h3>
+                                <span class="post-time">8 hours ago</span>
+                            </div>
+                            <span class="elite-badge"><i class="fas fa-star"></i> Elite</span>
+                        </div>
+                        <button class="post-menu-btn">
+                            <i class="fas fa-ellipsis-h"></i>
+                        </button>
+                    </div>
+                    <div class="post-image premium-image">
+                        <img src="https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?w=500&h=500&fit=crop" alt="Post">
+                        <div class="image-overlay"></div>
+                    </div>
+                    <div class="post-actions">
+                        <button class="action-btn like-btn" data-post="4">
+                            <i class="far fa-heart"></i>
+                        </button>
+                        <button class="action-btn comment-btn">
+                            <i class="far fa-comment"></i>
+                        </button>
+                        <button class="action-btn share-btn">
+                            <i class="far fa-paper-plane"></i>
+                        </button>
+                        <button class="action-btn save-btn">
+                            <i class="far fa-bookmark"></i>
+                        </button>
+                    </div>
+                    <div class="post-likes">
+                        <strong id="likes-count-4">4,123</strong> likes
+                    </div>
+                    <div class="post-caption">
+                        <strong>sarah_elite</strong> Masterpiece creation from an elite artist 🎨✨ #EliteArt #Luxury
+                    </div>
+                    <div class="post-comments">
+                        <a href="#">View all 234 comments</a>
+                    </div>
+                </article>
+            </section>
+        </main>
+
+        <!-- Right Sidebar (Suggestions) -->
+        <aside class="right-sidebar glass-effect">
+            <div class="right-sidebar-content">
+                <div class="user-profile-card glass-effect premium-card">
+                    <img src="profile photo.jpeg" alt="Profile" class="profile-pic">
+                    <div class="profile-info">
+                        <h3>elite_user</h3>
+                        <p>Premium Member</p>
+                        <span class="elite-status"><i class="fas fa-crown"></i> Elite</span>
+                    </div>
+                    <button class="switch-btn premium-btn-small">Switch</button>
+                </div>
+
+                <div class="suggestions-section glass-effect">
+                    <div class="suggestions-header">
+                        <h4>Elite Suggestions</h4>
+                        <a href="#">See All</a>
+                    </div>
+                    <div class="suggestion-list">
+                        <div class="suggestion-item glass-effect">
+                            <img src="https://i.pravatar.cc/40?img=6" alt="User">
+                            <div class="suggestion-info">
+                                <h5>elite_user_1</h5>
+                                <p>Followed by john_elite</p>
+                            </div>
+                            <button class="follow-btn premium-btn-small">Follow</button>
+                        </div>
+                        <div class="suggestion-item glass-effect">
+                            <img src="https://i.pravatar.cc/40?img=7" alt="User">
+                            <div class="suggestion-info">
+                                <h5>elite_user_2</h5>
+                                <p>Premium Creator</p>
+                            </div>
+                            <button class="follow-btn premium-btn-small">Follow</button>
+                        </div>
+                        <div class="suggestion-item glass-effect">
+                            <img src="https://i.pravatar.cc/40?img=8" alt="User">
+                            <div class="suggestion-info">
+                                <h5>elite_user_3</h5>
+                                <p>Followed by jane_premium</p>
+                            </div>
+                            <button class="follow-btn premium-btn-small">Follow</button>
+                        </div>
+                        <div class="suggestion-item glass-effect">
+                            <img src="https://i.pravatar.cc/40?img=9" alt="User">
+                            <div class="suggestion-info">
+                                <h5>elite_user_4</h5>
+                                <p>Verified Creator</p>
+                            </div>
+                            <button class="follow-btn premium-btn-small">Follow</button>
+                        </div>
+                        <div class="suggestion-item glass-effect">
+                            <img src="https://i.pravatar.cc/40?img=10" alt="User">
+                            <div class="suggestion-info">
+                                <h5>elite_user_5</h5>
+                                <p>Followed by alex_elite</p>
+                            </div>
+                            <button class="follow-btn premium-btn-small">Follow</button>
+                        </div>
+                    </div>
+                </div>
+
+                <footer class="sidebar-footer">
+                    <a href="#">About</a>
+                    <a href="#">Help</a>
+                    <a href="#">Press</a>
+                    <a href="#">API</a>
+                    <a href="#">Jobs</a>
+                    <a href="#">Privacy</a>
+                    <a href="#">Terms</a>
+                    <p>&copy; 2026 Elitegram - Premium Social Experience</p>
+                </footer>
+            </div>
+        </aside>
+    </div>
+
+    <!-- Story Viewer Modal -->
+   <div id="storyModal" class="modal story-modal glass-effect">
+        <div class="story-viewer">
+            <button class="story-close">&times;</button>
+            <button class="story-prev"><i class="fas fa-chevron-left"></i></button>
+            <div class="story-content">
+                <img id="storyImage" src="" alt="Story">
+                <div class="story-progress">
+                    <div class="progress-bar"></div>
+                </div>
+                <div class="story-user-info">
+                    <img id="storyUserAvatar" src="" alt="User" class="story-user-avatar">
+                    <div class="story-user-details">
+                        <h4 id="storyUsername">Username</h4>
+                        <span id="storyTime">2 hours ago</span>
+                    </div>
+                </div>
+            </div>
+            <button class="story-next"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </div>
+
+    <!-- Profile Modal -->
+    <div id="profileModal" class="modal">
+        <div class="modal-content profile-modal-content glass-effect">
+            <div class="modal-header">
+                <h2>Elite Profile</h2>
+                <button class="modal-close">&times;</button>
+            </div>
+            <div class="modal-body profile-body">
+                <div class="profile-header">
+                    <img src="profile photo.jpeg" alt="Profile" class="profile-large-pic">
+                    <div class="profile-stats">
+                        <div class="stat">
+                            <h3>3</h3>
+                            <p>Posts</p>
+                        </div>
+                        <div class="stat">
+                            <h3>4.9K</h3>
+                            <p>Followers</p>
+                        </div>
+                        <div class="stat">
+                            <h3>1</h3>
+                            <p>Following</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="profile-bio">
+                    <h3>ahmed0221_elite</h3>
+                    <p>Premium Member</p>
+                    <span class="elite-status-large"><i class="fas fa-crown"></i> Elite Member</span>
+                    <p class="bio-text">📸 Premium Creator | 🌍 Elite Traveler | ✨ Luxury Lifestyle</p>
+                    <a href="#" class="profile-website">www.eliteprofile.com</a>
+                </div>
+                <button class="btn-edit-profile premium-btn">Edit Profile</button>
+                <div class="profile-posts-grid">
+                    <h4>Elite Posts</h4>
+                    <div class="posts-grid">
+                        <div class="grid-item glass-effect">
+                            <img src="post 1.jpg" alt="Post">
+                        </div>
+                        <div class="grid-item glass-effect">
+                            <img src="post 2.jpg" alt="Post">
+                        </div>
+                        <div class="grid-item glass-effect">
+                            <img src="post 3.jpg" alt="Post">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Create Post Modal -->
+    <div id="createModal" class="modal">
+        <div class="modal-content glass-effect">
+            <div class="modal-header">
+                <h2>Create Elite Post</h2>
+                <button class="modal-close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form id="createPostForm">
+                    <div class="form-group">
+                        <label for="postCaption">Caption</label>
+                        <textarea id="postCaption" placeholder="Share your elite moment..." rows="4"></textarea>
+                        <div class="char-count">
+                            <span id="charCount">0</span>/2200
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="postImage">Upload Image</label>
+                        <input type="file" id="postImage" accept="image/*">
+                        <p class="form-hint">JPG, PNG, GIF up to 8MB</p>
+                    </div>
+                    <div class="form-group">
+                        <label for="postLocation">Location (Optional)</label>
+                        <input type="text" id="postLocation" placeholder="Add elite location...">
+                    </div>
+                    <div class="form-actions">
+                        <button type="button" class="btn-cancel">Cancel</button>
+                        <button type="submit" class="btn-post premium-btn">Post</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Comments Modal -->
+    <div id="commentsModal" class="modal">
+        <div class="modal-content modal-comments glass-effect">
+            <div class="modal-header">
+                <h2>Elite Comments</h2>
+                <button class="modal-close">&times;</button>
+            </div>
+            <div class="modal-body comments-list">
+                <div class="comment">
+                    <img src="https://i.pravatar.cc/32?img=11" alt="User" class="comment-avatar">
+                    <div class="comment-content">
+                        <strong>elite_user_1</strong>
+                        <p>Absolutely stunning! 🔥✨</p>
+                        <span class="comment-time">2 hours ago</span>
+                        <button class="comment-like-btn"><i class="far fa-heart"></i></button>
+                    </div>
+                </div>
+                <div class="comment">
+                    <img src="https://i.pravatar.cc/32?img=12" alt="User" class="comment-avatar">
+                    <div class="comment-content">
+                        <strong>elite_user_2</strong>
+                        <p>This is pure elegance! Where is this?</p>
+                        <span class="comment-time">1 hour ago</span>
+                        <button class="comment-like-btn"><i class="far fa-heart"></i></button>
+                    </div>
+                </div>
+                <div class="comment">
+                    <img src="https://i.pravatar.cc/32?img=13" alt="User" class="comment-avatar">
+                    <div class="comment-content">
+                        <strong>elite_user_3</strong>
+                        <p>Incredible masterpiece! 😍💎</p>
+                        <span class="comment-time">30 minutes ago</span>
+                        <button class="comment-like-btn"><i class="far fa-heart"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <input type="text" placeholder="Add an elite comment..." class="comment-input">
+                <button class="btn-post-comment premium-btn-small">Post</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Explore Modal -->
+    <div id="exploreModal" class="modal">
+        <div class="modal-content explore-modal glass-effect">
+            <div class="modal-header">
+                <h2>Explore Elite Content</h2>
+                <button class="modal-close">&times;</button>
+            </div>
+            <div class="modal-body explore-grid">
+                <div class="explore-item glass-effect">
+                    <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=300&h=300&fit=crop" alt="Explore">
+                    <div class="explore-overlay">
+                        <span><i class="fas fa-heart"></i> 1.2K</span>
+                        <span><i class="fas fa-comment"></i> 45</span>
+                    </div>
+                </div>
+                <div class="explore-item glass-effect">
+                    <img src="https://images.unsplash.com/photo-1495521821757-a1efb6729352?w=300&h=300&fit=crop" alt="Explore">
+                    <div class="explore-overlay">
+                        <span><i class="fas fa-heart"></i> 2.5K</span>
+                        <span><i class="fas fa-comment"></i> 89</span>
+                    </div>
+                </div>
+                <div class="explore-item glass-effect">
+                    <img src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=300&h=300&fit=crop" alt="Explore">
+                    <div class="explore-overlay">
+                        <span><i class="fas fa-heart"></i> 3.8K</span>
+                        <span><i class="fas fa-comment"></i> 156</span>
+                    </div>
+                </div>
+                <div class="explore-item glass-effect">
+                    <img src="https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?w=300&h=300&fit=crop" alt="Explore">
+                    <div class="explore-overlay">
+                        <span><i class="fas fa-heart"></i> 4.1K</span>
+                        <span><i class="fas fa-comment"></i> 234</span>
+                    </div>
+                </div>
+                <div class="explore-item glass-effect">
+                    <img src="https://images.unsplash.com/photo-1511379938547-c1f69b13d835?w=300&h=300&fit=crop" alt="Explore">
+                    <div class="explore-overlay">
+                        <span><i class="fas fa-heart"></i> 2.3K</span>
+                        <span><i class="fas fa-comment"></i> 78</span>
+                    </div>
+                </div>
+                <div class="explore-item glass-effect">
+                    <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=300&h=300&fit=crop" alt="Explore">
+                    <div class="explore-overlay">
+                        <span><i class="fas fa-heart"></i> 5.6K</span>
+                        <span><i class="fas fa-comment"></i> 312</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Floating Action Button -->
+    <button class="fab premium-btn" id="fab-create">
+        <i class="fas fa-pen"></i>
+    </button>
+
+    <!-- Loading Animation -->
+    <div class="loading-spinner" id="loadingSpinner">
+        <div class="spinner"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
