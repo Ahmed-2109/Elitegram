@@ -107,7 +107,6 @@ The project is fully responsive and works on:
 
 1. Live Demo
 
-```bash
 https://ahmed-2109.github.io/Elitegram/
 ```
 
