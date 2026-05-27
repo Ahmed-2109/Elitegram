@@ -108,7 +108,7 @@ The project is fully responsive and works on:
 1. Live Demo
 
 ```bash
-git clone https://github.com/your-username/elitegram.git
+https://ahmed-2109.github.io/Elitegram/
 ```
 
 2.  Run `index.html` in your browser
